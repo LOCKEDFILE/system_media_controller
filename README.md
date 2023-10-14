@@ -25,3 +25,28 @@ _systemMediaController.skipNext();
 _systemMediaController.skipPrevious();
 ~~~
 
+
+
+### With FCM
+
+If you use FCM(`silent notification`) with another Platforms(`like Flutter Web`), you can control the media being played on mobile from the another platforms.
+
+~~~dart
+// example fcm 
+Map silentNotification = {
+    'message': {
+        'data': {
+            'action': 'play'
+        }
+    }
+}
+
+FirebaseMessaging.onBackgroundMessage((message){
+    /// ...another code
+    final String? action = message.data['action'];
+    if(action == 'play'){
+        _systemMediaController.play();
+    }
+});
+~~~
+
