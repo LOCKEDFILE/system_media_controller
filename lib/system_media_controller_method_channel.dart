@@ -25,4 +25,10 @@ class MethodChannelSystemMediaController extends SystemMediaControllerPlatform {
 
   @override
   Future<bool> skipPrevious() async => invokeMethod('skipPrevious');
+
+  @override
+  Future<bool> rewind() async => invokeMethod('rewind');
+
+  @override
+  Future<bool> fastForward() async => invokeMethod('fastForward');
 }

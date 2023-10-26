@@ -16,4 +16,12 @@ class SystemMediaController {
   Future<bool> skipPrevious() {
     return SystemMediaControllerPlatform.instance.skipPrevious();
   }
+
+  Future<bool> fastForward() {
+    return SystemMediaControllerPlatform.instance.fastForward();
+  }
+
+  Future<bool> rewind() {
+    return SystemMediaControllerPlatform.instance.rewind();
+  }
 }

@@ -39,4 +39,12 @@ abstract class SystemMediaControllerPlatform extends PlatformInterface {
   Future<bool> skipPrevious() {
     throw UnimplementedError('skipPrevious() has not been implemented.');
   }
+
+  Future<bool> fastForward() {
+    throw UnimplementedError('fastForward() has not been implemented.');
+  }
+
+  Future<bool> rewind() {
+    throw UnimplementedError('rewind() has not been implemented.');
+  }
 }

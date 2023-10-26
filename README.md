@@ -23,6 +23,8 @@ _systemMediaController.play();
 _systemMediaController.pause();
 _systemMediaController.skipNext();
 _systemMediaController.skipPrevious();
+_systemMediaController.fastForward();
+_systemMediaController.rewind();
 ~~~
 
 

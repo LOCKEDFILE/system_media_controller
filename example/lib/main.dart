@@ -20,6 +20,8 @@ class _MyAppState extends State<MyApp> {
   Future<bool> _pause() => _systemMediaControllerPlugin.pause();
   Future<bool> _skipNext() => _systemMediaControllerPlugin.skipNext();
   Future<bool> _skipPrevious() => _systemMediaControllerPlugin.skipPrevious();
+  Future<bool> _rewind() => _systemMediaControllerPlugin.rewind();
+  Future<bool> _fastForward() => _systemMediaControllerPlugin.fastForward();
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +49,14 @@ class _MyAppState extends State<MyApp> {
               IconButton(
                 onPressed: _skipPrevious,
                 icon: const Icon(Icons.skip_previous),
+              ),
+              IconButton(
+                onPressed: _rewind,
+                icon: const Icon(Icons.fast_rewind),
+              ),
+              IconButton(
+                onPressed: _fastForward,
+                icon: const Icon(Icons.fast_forward),
               ),
             ],
           ),

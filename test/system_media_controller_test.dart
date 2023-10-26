@@ -18,6 +18,12 @@ class MockSystemMediaControllerPlatform
 
   @override
   Future<bool> skipPrevious() async => true;
+
+  @override
+  Future<bool> fastForward() async => true;
+
+  @override
+  Future<bool> rewind() async => true;
 }
 
 void main() {

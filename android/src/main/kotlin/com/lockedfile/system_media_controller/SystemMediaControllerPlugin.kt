@@ -45,7 +45,16 @@ class SystemMediaControllerPlugin: FlutterPlugin, MethodCallHandler {
     else if (call.method == "skipPrevious") {
       sendMediaButton(KeyEvent.KEYCODE_MEDIA_PREVIOUS)
       result.success("Success");
-    } else {
+    }
+    else if (call.method == "rewind") {
+      sendMediaButton(KeyEvent.KEYCODE_MEDIA_REWIND)
+      result.success("Success");
+    } 
+    else if (call.method == "fastForward") {
+      sendMediaButton(KeyEvent.KEYCODE_MEDIA_FAST_FORWARD)
+      result.success("Success");
+    } 
+    else {
       result.notImplemented();
     }
   }
