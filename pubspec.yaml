@@ -1,6 +1,6 @@
 name: system_media_controller
 description: System Media Control package is a Flutter package that allows you to control the media on the system.(only android)
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/LOCKEDFILE/system_media_controller
 
 environment:
